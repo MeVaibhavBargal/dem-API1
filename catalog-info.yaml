@@ -1,21 +1,21 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: core-queueing-library
+  name: my-app-module1
   description: Push jobs onto a globally available shared queue.
 spec:
   type: library
   lifecycle: production
-  owner: roadie
+  owner: vaibhav
   dependencyOf:
-    - Component:passenger-backend
+    - Component:my-backend-app
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: core-auth-module
+  name: my-app-module
   description: Authenticate incoming requests.
 spec:
   type: library
   lifecycle: production
-  owner: roadie
+  owner: vaibhav
